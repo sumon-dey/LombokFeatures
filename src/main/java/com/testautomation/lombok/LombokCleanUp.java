@@ -7,7 +7,8 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import lombok.Cleanup;
 
-/*We can use @Cleanup to ensure a given resource is automatically cleaned up before the code execution path exits our current scope. 
+/*We can use @Cleanup to ensure a given resource is automatically cleaned up before the code 
+execution path exits our current scope. 
  * We can do this by annotating any local variable declaration with the @Cleanup annotation like:
 @Cleanup InputStream in = new FileInputStream("some/file");
 As a result, at the end of the scope we are in, in.close() is called. 
